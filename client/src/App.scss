@@ -1,0 +1,48 @@
+@import "./sass-variables.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@200&family=Orbitron&display=swap');
+
+* {
+	font-family: 'League Spartan', sans-serif;
+	font-family: 'Orbitron', sans-serif;
+	
+	letter-spacing: 1px;
+	
+	color: white;
+}
+
+.text-spread {
+	letter-spacing: 1px;
+}
+
+.glow-primary {
+	box-shadow: 0 0 20px 5px $primary-light;
+}
+
+.glow-success {
+	box-shadow: 0 0 20px 5px $success-light;
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+	text-transform: uppercase;
+	letter-spacing: 4px;
+}
+
+body {
+	@extend .bg-dark;
+}
+
+.btn-primary {
+	@extend .glow-primary;
+}
+
+.btn-success {
+	@extend .glow-success;
+}
+
+.text-primary-glow {
+	text-shadow: 0 0 2px $primary, 0 0 8px $primary !important;
+}
+
+@import "./styles/bootstrap-override.scss";

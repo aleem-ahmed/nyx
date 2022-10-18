@@ -1,0 +1,13 @@
+@import "../sass-variables.scss";
+
+$theme-colors: (
+	"primary": $primary,
+	"primary-light": $primary-light,
+	"secondary": $secondary,
+	"dark": $dark,
+	"dark-light": $dark-light,
+	"success": $success
+);
+
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~bootstrap/scss/bootstrap";
